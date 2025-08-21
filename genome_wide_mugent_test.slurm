@@ -3,6 +3,7 @@
 #SBATCH --job-name=noah_genome_wide_mugent_test
 #SBATCH --partition=bigmem
 #SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
 #SBATCH --mem=40gb
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=guptaa12@ccf.org
