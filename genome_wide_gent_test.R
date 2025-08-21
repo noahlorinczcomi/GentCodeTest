@@ -7,6 +7,7 @@ setwd('gent_test')
 
 # load Alzheimer's disease GWAS data
 ad_gwas=data.table::fread('Kunkle_etal_Stage1_results.txt') # Alzheimer's disease GWAS
+ad_gwas %>% mutate(z=Beta/SE)
 
 # Genome-wide gene-based association testing (GenT)
 ad_result=gent_genomewide(
@@ -18,7 +19,7 @@ ad_result=gent_genomewide(
     chromosome='Chromosome',       # column name of chromosome in ad_gwas
     position='Position',           # column name of SNP base pair position (hg19) in ad_gwas
     effect_allele='Effect_allele', # column name of SNP effect allele in ad_gwas
-    z=NULL,                        # Z-statistic column is not present in ad_gwas so set NULL
+    z='z',                        # Z-statistic column is not present in ad_gwas so set NULL
     verbose=TRUE)                  # TRUE indicates that progress should be printed to the console
 
 # Plot summaries
