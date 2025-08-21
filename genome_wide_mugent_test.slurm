@@ -8,7 +8,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=guptaa12@ccf.org
 
-module load R/4.3.3
+module load R/4.5.1
 cd /home/guptaa12/beegfs/guptaa12/v8de8bueja89e/mugent_test
 # download AD GWAS summary statistics
 afr_loc="https://storage.googleapis.com/covid19-hg-public/freeze_7/results/20220403/pop_spec/sumstats/COVID19_HGI_B2_ALL_afr_leave23andme_20220403.tsv.gz"
