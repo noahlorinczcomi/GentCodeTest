@@ -1,5 +1,5 @@
 cd /home/guptaa12/beegfs/guptaa12/
-mkdir v8de8bueja89e && cd v8de8bueja89e
+mkdir -p v8de8bueja89e && cd v8de8bueja89e
 Rscript -e "remotes::install_github('noahlorinczcomi/gent',lib=getwd())"
 mkdir -p gent_test mugent_test
 mv genome_wide_gent_test.* gent_test
