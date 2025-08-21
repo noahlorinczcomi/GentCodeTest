@@ -8,7 +8,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=guptaa12@ccf.org
 
-module load R/4.3.3
+module load R/4.5.1
 cd /home/guptaa12/beegfs/guptaa12/v8de8bueja89e/gent_test
 # download AD GWAS summary statistics
 ad_fp="https://ftp.ebi.ac.uk/pub/databases/gwas/summary_statistics/GCST007001-GCST008000/GCST007511/Kunkle_etal_Stage1_results.txt"
