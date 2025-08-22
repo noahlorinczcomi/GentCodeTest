@@ -23,8 +23,8 @@ ad_result=gent_genomewide(
     verbose=TRUE)                  # TRUE indicates that progress should be printed to the console
 
 # Plot summaries
-p1=gent_manhattan(ad_result) + coord_cartesian(ylim=c(0,100))
-p2=gent_qq(ad_result) + ggtitle('QQ plot of GenT (AD)')
+#p1=gent_manhattan(ad_result) + coord_cartesian(ylim=c(0,100))
+#p2=gent_qq(ad_result) + ggtitle('QQ plot of GenT (AD)')
 
 # Fine-mapping
 finemapping_results_clumping=gent_finemap(
@@ -49,6 +49,6 @@ finemapping_results_setgenes=gent_finemap(
 saveRDS(ad_result,'ad_result.Rds')
 saveRDS(finemapping_results_clumping,'finemapping_results_clumping.Rds')
 saveRDS(finemapping_results_setgenes,'finemapping_results_setgenes.Rds')
-ggsave('gent_manhattan.pdf',p1,width=6,height=4)
-ggsave('gent_qq.pdf',p2,width=4,height=4)
+#ggsave('gent_manhattan.pdf',p1,width=6,height=4)
+#ggsave('gent_qq.pdf',p2,width=4,height=4)
 
