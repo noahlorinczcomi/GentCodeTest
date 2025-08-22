@@ -26,8 +26,8 @@ covid_result=mugent_genomewide(
     verbose = TRUE)                                   # TRUE indicates progress should be printed to the console 
 
 # Plot summaries
-p1=gent_manhattan(covid_result)
-p2=gent_qq(covid_result) + ggtitle('QQ plot of COVID-19 MuGenT (EUR and AFR)')
+#p1=gent_manhattan(covid_result)
+#p2=gent_qq(covid_result) + ggtitle('QQ plot of COVID-19 MuGenT (EUR and AFR)')
 
 # Fine-mapping
 finemapping_results_clumping=gent_finemap(
@@ -52,7 +52,7 @@ finemapping_results_setgenes=gent_finemap(
 saveRDS(covid_result,'covid_result.Rds')
 saveRDS(finemapping_results_clumping,'finemapping_results_clumping.Rds')
 saveRDS(finemapping_results_setgenes,'finemapping_results_setgenes.Rds')
-ggsave('mugent_manhattan.pdf',p1,width=6,height=4)
-ggsave('mugent_qq.pdf',p2,width=4,height=4)
+#ggsave('mugent_manhattan.pdf',p1,width=6,height=4)
+#ggsave('mugent_qq.pdf',p2,width=4,height=4)
 
 
