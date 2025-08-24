@@ -22,7 +22,7 @@ covid_result=mugent_genomewide(
     chromosome_list = list(EUR='#CHR', AFR='#CHR'),   # column names of chromosomes
     position_list = list(EUR='POS', AFR='POS'),       # column names of SNP base pair positions (hg19)
     effect_allele_list = list(EUR='ALT', AFR='ALT'),  # effect allele column names
-    z_list = list(EUR='z', AFR='z'),                  # Z-statistic column is not present in either GWAS so set NULL
+    z_statistic_list = list(EUR='z', AFR='z'),        # Z-statistic column is not present in either GWAS so set NULL
     verbose = TRUE)                                   # TRUE indicates progress should be printed to the console 
 
 # Plot summaries
