@@ -19,7 +19,7 @@ ad_result=gent_genomewide(
     chromosome='Chromosome',       # column name of chromosome in ad_gwas
     position='Position',           # column name of SNP base pair position (hg19) in ad_gwas
     effect_allele='Effect_allele', # column name of SNP effect allele in ad_gwas
-    z='z',                        # Z-statistic column is not present in ad_gwas so set NULL
+    z_statistic='z',               # Z-statistic column is not present in ad_gwas so set NULL
     verbose=TRUE)                  # TRUE indicates that progress should be printed to the console
 
 # Plot summaries
