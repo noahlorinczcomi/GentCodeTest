@@ -1,6 +1,6 @@
 setwd('/home/guptaa12/beegfs/guptaa12/v8de8bueja89e')
 library(gent,lib=getwd())
-source('https://raw.githubusercontent.com/noahlorinczcomi/gent/refs/heads/main/genomewide.R')
+#source('https://raw.githubusercontent.com/noahlorinczcomi/gent/refs/heads/main/genomewide.R')
 library(dplyr)
 library(ggplot2)
 setwd('mugent_test')
